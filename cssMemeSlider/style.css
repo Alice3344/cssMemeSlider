@@ -3,13 +3,12 @@
     padding: 0;
 }
 
-
 body {
     background-color: darkslategray;
 }
 
 .wrapper {
-    width: 70%;
+    max-width: 50%;
     height: 100vh;
     margin: auto;
     overflow: hidden;
@@ -24,7 +23,7 @@ body {
     margin: auto;
     width: 400%;
     display: flex;
-	margin-top: 5%;
+    margin-top: 5%;
 }
 
 .slide {
@@ -70,7 +69,7 @@ input {
 
 .navigation {
     display: flex;
-    margin-top: -10%;
+    margin-bottom: 9%;
 }
 
 .wrapper-bar {
@@ -98,6 +97,72 @@ input {
     background-color: darkgoldenrod;
 }
 
-.bar:focus {
-    border: 1 px solid #000;
+@media (max-width: 1440px) {
+	.wrapper {
+		max-width: 58%;
+	}		
+}
+
+@media (max-width: 1280px) {
+	.wrapper {
+		max-width: 58%;
+	}		
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		max-width: 68%;
+	}		
+}
+
+@media (max-width: 960px) {
+	.wrapper {
+		align-items: center;
+	}
+	.content {
+		margin-top: 1.5em;
+		font-size: 1.4em;
+	}	
+
+	.navigation {
+		margin-bottom: 7%;
+	}
+
+	.bar {
+		height: 0.8em;
+		width: 0.8em;
+	}	
+}
+
+@media (max-width: 870px) {
+    .wrapper {
+		max-width: 88%;
+	}
+	.navigation {
+		margin-bottom: 25%;
+	}
+}
+
+@media (max-width: 700px) {
+	.wrapper {
+		max-width: 95%;
+	}
+}
+
+@media (max-width: 650px) {
+	.navigation {
+		margin-bottom: 45%;
+	}
+}
+
+@media (max-width: 600px) {
+	.navigation {
+		margin-bottom: 55%;
+	}
+}
+
+@media (max-width: 520px) {
+	.navigation {
+		margin-bottom: 75%;
+	}
 }
